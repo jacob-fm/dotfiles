@@ -1,0 +1,1018 @@
+: 1731426313:0;cd fonts
+: 1731426313:0;./install.sh
+: 1731426313:0;cd ..
+: 1731426313:0;rm -rf fonts
+: 1731426313:0;sudo xcodebuild -license accept
+: 1731426313:0;sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+: 1731426313:0;brew install zsh-autosuggestions
+: 1731426313:0;code zshrc
+: 1731426313:0;code ./zshrc
+: 1731426313:0;code .zshrc
+: 1731426313:0;source ~/.zshrc
+: 1731426313:0;brew install autojump
+: 1731426313:0;cd ~/.oh-my-zsh/custom/plugins
+: 1731426313:0;git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+: 1731426313:0;echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+: 1731426313:0;source ~/.zshrc
+: 1731426313:0;echo $SHELL
+: 1731426313:0;source ~/.zshrc
+: 1731426313:0;source -h
+: 1731426313:0;man source
+: 1731426313:0;. ~/.zshrc
+: 1731426313:0;brew install autojump
+: 1731426313:0;brew reinstall autojump
+: 1731426313:0;. ~/.zshrc
+: 1731426313:0;neofetch
+: 1731426313:0;hello
+: 1731426313:0;man
+: 1731426313:0;echo hello
+: 1731426313:0;echo hi how are you
+: 1731426313:0;spicetify -h
+: 1731426313:0;spicetify up
+: 1731426313:0;spicetify update
+: 1731426313:0;csch -s /bin/zsh
+: 1731426313:0;spicetify update
+: 1731426313:0;. ~/.zshrc
+: 1731426313:0;spicetify update
+: 1731426313:0;ls -a
+: 1731426313:0;cd .spicetify
+: 1731426313:0;ls
+: 1731426313:0;./spicetify backup apply
+: 1731426313:0;spicetify restore backup
+: 1731426313:0;./spicetify restore backup
+: 1731426313:0;./spicetify backup apply
+: 1731426313:0;spicetify update
+: 1731426313:0;echo $PATH
+: 1731426313:0;echo $HOME
+: 1731426313:0;spicetify update
+: 1731426313:0;brew install zsh-autosuggestions
+: 1731426313:0;. ~/.zshrc
+: 1731426313:0;npm run dev
+: 1731426313:0;npm run dev
+: 1731426313:0;npm run dev
+: 1731426313:0;defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false\
+
+: 1731426313:0;defaults write -g ApplePressAndHoldEnabled -bool false\
+
+: 1731426313:0;brew install neovim
+: 1731426313:0;npm run dev
+: 1731426313:0;ls
+: 1731426313:0;cd Documents
+: 1731426313:0;ls
+: 1731426313:0;cs Github
+: 1731426313:0;cd Github
+: 1731426313:0;ls
+: 1731426313:0;cd portfolio-site-2
+: 1731426313:0;cd portfolio-sit
+: 1731426313:0;cd portfolio-site
+: 1731426313:0;npm install -D sass\
+
+: 1731426313:0;npm audit fix
+: 1731426313:0;cd Documents
+: 1731426313:0;cd Github/portfolio-site-2
+: 1731426313:0;git -h
+: 1731426313:0;git commit
+: 1731426313:0;git add portfolio-site/package-lock/json
+: 1731426313:0;git add portfolio-site/package-lock.json
+: 1731426313:0;git add portfolio-site/package.json
+: 1731426313:0;git commit
+: 1731426313:0;git commit -h
+: 1731426313:0;cd Documents
+: 1731426313:0;cd Github/portfolio-site-2
+: 1731426313:0;git push
+: 1731426313:0;cd Documents/Github/portfolio-site-2
+: 1731426313:0;git push
+: 1731426313:0;git commit
+: 1731426313:0;git commit -a
+: 1731426313:0;git push
+: 1731426313:0;npm run build
+: 1731426313:0;git commit -a
+: 1731426313:0;git push
+: 1731426313:0;git commit	
+: 1731426313:0;git commit -a
+: 1731426313:0;git add portfolio-site/vite.config.js
+: 1731426313:0;git commit -a
+: 1731426313:0;git push
+: 1731426313:0;ls
+: 1731426313:0;git switch -c restruct
+: 1731426313:0;ls
+: 1731426313:0;mv portfolio-site/* ./
+: 1731426313:0;ls
+: 1731426313:0;git commit -a
+: 1731426313:0;git stage *
+: 1731426313:0;git restore
+: 1731426313:0;git restore --stage *
+: 1731426313:0;git -
+: 1731426313:0;git -h
+: 1731426313:0;git help -g
+: 1731426313:0;git status
+: 1731426313:0;git restore --staged *
+: 1731426313:0;git reset
+: 1731426313:0;git status
+: 1731426313:0;git add --all
+: 1731426313:0;git config core.autocrlf true
+: 1731426313:0;git status
+: 1731426313:0;cd Documents/Github/portfolio-site-2
+: 1731426313:0;ls
+: 1731426313:0;status
+: 1731426313:0;git staus
+: 1731426313:0;git status
+: 1731426313:0;git commit -a -m reorganize file structure so that vite project directory and repo directory are the same
+: 1731426313:0;git commit -a -m "reorganize file structure so that vite project directory and repo directory are the same"
+: 1731426313:0;git push
+: 1731426313:0;git push --set-upstream origin restruct
+: 1731426313:0;git config http.postBuffer 10g
+: 1731426313:0;git push --set-upstream origin restruct
+: 1731426313:0;npm run build
+: 1731426313:0;vite build
+: 1731426313:0;npm run build
+: 1731426313:0;git commit -a -m "include all html files in vite build"
+: 1731426313:0;git config --global core.autocrlf false\
+
+: 1731426313:0;git commit -a -m "include all html files in vite build"
+: 1731426313:0;git add dist/*
+: 1731426313:0;$ git config --global core.autocrlf input\
+
+: 1731426313:0;git config --global core.autocrlf input\
+
+: 1731426313:0;git add dist/*
+: 1731426313:0;git commit
+: 1731426313:0;git commit -m "ACTUALLY include all html files in vite build"
+: 1731426313:0;git push
+: 1731426313:0;netlify-cli -g
+: 1731426313:0;npm install netlify-cli -g
+: 1731426313:0;netlify init
+: 1731426313:0;git push
+: 1731426313:0;git status
+: 1731426313:0;git commit -m "set script type=module for contact page"
+: 1731426313:0;git commit -a -m "set script type=module for contact page"
+: 1731426313:0;git push
+: 1731426313:0;npm run build
+: 1731426313:0;git commit -a -m "set script type=module for contact page"
+: 1731426313:0;git push
+: 1731426313:0;mv ~/Downloads/favicon.ico ./media
+: 1731426313:0;cd media
+: 1731426313:0;ls
+: 1731426313:0;cd ..
+: 1731426313:0;git commit -a -m "set favicon in index and contact pages"
+: 1731426313:0;git push
+: 1731426313:0;netlify
+: 1731426313:0;netlify deploy
+: 1731426313:0;netlify deploy --prod
+: 1731426313:0;git commit -a -m "adjust form honeypot to netlify version"
+: 1731426313:0;git push
+: 1731426313:0;git merge main
+: 1731426313:0;git diff restruct main
+: 1731426313:0;git switch main
+: 1731426313:0;git merge restruct
+: 1731426313:0;npx vite --port=4000
+: 1731426313:0;git push
+: 1731426313:0;npm run build
+: 1731426313:0;npm run dev
+: 1731426313:0;brew install dos2unix
+: 1731426313:0;find ./node_modules -name "*.js" | xargs sudo dos2unix
+: 1731426313:0;npm run dev
+: 1731426313:0;npm run build
+: 1731426313:0;git config --global core.autocrlf input
+: 1731426313:0;git status
+: 1731426313:0;git add dist/*
+: 1731426313:0;git commit -a -m "fix for bug introduced by Git replacing LF with CRLF" "(Likely a temporary fix tbh)\
+\
+
+: 1731426313:0;git commit -a -m "fix for bug introduced by Git replacing LF with CRLF" "(Likely a temporary fix tbh)"\
+\
+
+: 1731426313:0;git commit -a -m "fix for bug introduced by Git replacing LF with CRLF (Likely a temporary fix tbh)"\
+\
+
+: 1731426313:0;git push
+: 1731426313:0;git branch -d restruct
+: 1731426313:0;git branch -d renewed
+: 1731426313:0;git push origin -d restruct
+: 1731426313:0;git push origin -d renewed
+: 1731426313:0;netlify deploy --prod
+: 1731426313:0;npx vite --port=4000
+: 1731426313:0;cd Documents/Github/portfolio-site-2
+: 1731426313:0;git status
+: 1731426313:0;git add media/*
+: 1731426313:0;git commit -m "update favicon"
+: 1731426313:0;npm run dev
+: 1731426313:0;git commit -m "update favicon"
+: 1731426313:0;git commit -a -m "update favicon"
+: 1731426313:0;npm run build
+: 1731426313:0;git commit -a -m "run build"
+: 1731426313:0;git push
+: 1731426313:0;netlify deploy --prod
+: 1731426313:0;npm run dev
+: 1731426313:0;git commit -a -m "update favicon"
+: 1731426313:0;netlify deploy
+: 1731426313:0;git push
+: 1731426313:0;netlify deploy
+: 1731426313:0;npm run build
+: 1731426313:0;netlify deploy
+: 1731426313:0;netlify deploy --prod
+: 1731426313:0;git status
+: 1731426313:0;git commit -a -m "update favicon"
+: 1731426313:0;git push
+: 1731426313:0;netlify deploy --prod
+: 1731426313:0;git commit -a -m "update favicon"
+: 1731426313:0;netlify deploy
+: 1731426313:0;git push
+: 1731426313:0;netlify deploy
+: 1731426313:0;npm run dev
+: 1731426313:0;netlify deploy
+: 1731426313:0;git commit -a -m "update favicon"
+: 1731426313:0;npm run dev
+: 1731426313:0;git push
+: 1731426313:0;git commit -a -m "delete some text from homepage"
+: 1731426313:0;git push
+: 1731426313:0;git commit -a -m "another change in text on homepage"
+: 1731426313:0;git push
+: 1731426313:0;git commit -a -m "another change in text on homepage"
+: 1731426313:0;git push
+: 1731426313:0;npm run dev
+: 1731426313:0;npx vite --port=4000
+: 1731426313:0;npm run dev
+: 1731426313:0;npx vite --port=4000
+: 1731426313:0;git commit -a -m "rework basic page structure around .meta-content class" -m "plus some fixing of button layout behaviors" -m "plus get started on design-work page"
+: 1731426313:0;git push
+: 1731426313:0;git revert main^
+: 1731426313:0;git revert --abort
+: 1731426313:0;git branch operating
+: 1731426313:0;git branch -f main main^
+: 1731426313:0;git switch main^
+: 1731426313:0;git switch --detach main^
+: 1731426313:0;git branch -f main HEAD
+: 1731426313:0;git switch main
+: 1731426313:0;git push
+: 1731426313:0;git revert
+: 1731426313:0;git revert HEAD^
+: 1731426313:0;git switch operating
+: 1731426313:0;git push
+: 1731426313:0;git push --set-upstream origin operating
+: 1731426313:0;git switch main
+: 1731426313:0;git push
+: 1731426313:0;git status
+: 1731426313:0;git push -f origin main
+: 1731426313:0;git diff main operating
+: 1731426313:0;git switch operating
+: 1731426313:0;npm run dev
+: 1731426313:0;cd Documents/Github/portfolio-site-2
+: 1731426313:0;git commit -a -m "Working sticky sidebar
+: 1731426313:0;git commit -a -m "Working sticky sidebar"
+: 1731426313:0;ls
+: 1731426313:0;cd media
+: 1731426313:0;ls
+: 1731426313:0;mv design-text-vector.svg design-blurb.svg
+: 1731426313:0;ls
+: 1731426313:0;rm design-blurb.svg
+: 1731426313:0;ls
+: 1731426313:0;mv 'Vector 15.svg' design-bg-1.svg
+: 1731426313:0;ls
+: 1731426313:0;mv 'Vector 16.svg' design-bg-2.svg
+: 1731426313:0;git switch main
+: 1731426313:0;git status
+: 1731426313:0;git add media/*
+: 1731426313:0;cd ..
+: 1731426313:0;git status
+: 1731426313:0;git add media/*
+: 1731426313:0;touch .git/hooks/pre-commit
+: 1731426313:0;chmod +x .git/hooks/pre-commit
+: 1731426313:0;ls
+: 1731426313:0;ls -a
+: 1731426313:0;sudo code .git/hooks/pre-commit
+: 1731426313:0;git status
+: 1731426313:0;git add .gitignore
+: 1731426313:0;git status
+: 1731426313:0;git commit -a -m "Misc fixes"
+: 1731426313:0;git push
+: 1731426313:0;git switch main
+: 1731426313:0;git merge operating
+: 1731426313:0;git status
+: 1731426313:0;git add index.html
+: 1731426313:0;git status
+: 1731426313:0;git commit
+: 1731426313:0;git push
+: 1731426313:0;git status
+: 1731426313:0;git commit -a -m "big mobile layout fixes (not finished though)"
+: 1731426313:0;git push
+: 1731426313:0;git branch
+: 1731426313:0;git diff main operating
+: 1731426313:0;git branch -d operating
+: 1731426313:0;git branch
+: 1731426313:0;git switch -c prod
+: 1731426313:0;git branch -r
+: 1731426313:0;git branch -d -r operating
+: 1731426313:0;git push origin -d operating
+: 1731426313:0;git branch -r
+: 1731426313:0;git commit -a -m "small fix of contact form for very small phones"
+: 1731426313:0;git merg main
+: 1731426313:0;git merge main
+: 1731426313:0;git diff main prod
+: 1731426313:0;git staus
+: 1731426313:0;git status
+: 1731426313:0;git diff main prod
+: 1731426313:0;git switch main
+: 1731426313:0;git merge prod
+: 1731426313:0;git push
+: 1731426313:0;git switch prod
+: 1731426313:0;git status
+: 1731426313:0;git commit -a -m "h1 margin adjustments on mobile"
+: 1731426313:0;git switch main
+: 1731426313:0;git merge prod
+: 1731426313:0;git push
+: 1731426313:0;git switch prod
+: 1731426313:0;git commit -a -m "mobile nav-menu works, just need to make it reusable for all pages"
+: 1731426313:0;git commit -a -m "create and implement mobile nav-menu as a reusable component"
+: 1731426313:0;git switch main
+: 1731426313:0;git merge prod
+: 1731426313:0;git push
+: 1731426313:0;git status
+: 1731426313:0;git add media/*
+: 1731426313:0;git status
+: 1731426313:0;git commit -a -m "include svg icons"
+: 1731426313:0;git push
+: 1731426313:0;git status
+: 1731426313:0;git switch prod
+: 1731426313:0;git status
+: 1731426313:0;git add style.scss
+: 1731426313:0;git commit -m "fix contact form layound on small phones"
+: 1731426313:0;git commit -m "set input box-sizing: border-box to fix slightly weird alignment"
+: 1731426313:0;git commit -a -m "set input box-sizing: border-box to fix slightly weird alignment"
+: 1731426313:0;git commit -a -m "fix form button sizing"
+: 1731426313:0;git swtich main
+: 1731426313:0;git switch main
+: 1731426313:0;git switch prod
+: 1731426313:0;git diff prod main
+: 1731426313:0;git switch HEAD^
+: 1731426313:0;git switch --detach prod^
+: 1731426313:0;git switch HEAD^
+: 1731426313:0;git switch --detach HEAD^
+: 1731426313:0;git switch prod
+: 1731426313:0;git switch main
+: 1731426313:0;git switch prod
+: 1731426313:0;git switch main
+: 1731426313:0;git switch prod
+: 1731426313:0;git switch main
+: 1731426313:0;git switch prod
+: 1731426313:0;git status
+: 1731426313:0;git add media/*
+: 1731426313:0;git status
+: 1731426313:0;git commit -a -m "reintroduce missing svg files"
+: 1731426313:0;git switch main
+: 1731426313:0;git merge prod
+: 1731426313:0;git status
+: 1731426313:0;git add .gitignore
+: 1731426313:0;git status
+: 1731426313:0;git commit -a -m "update .gitignore to account for .DS_Store"
+: 1731426313:0;git push
+: 1731426313:0;git diff prod main
+: 1731426313:0;git switch prod
+: 1731426313:0;git status
+: 1731426313:0;git commit -a -m "update .gitignore to account for .DS_Store"
+: 1731426313:0;git switch main
+: 1731426313:0;git merge prod
+: 1731426313:0;git push
+: 1731426313:0;git switch prod
+: 1731426313:0;git commit -a -m "fix h1 sizing on mobile"
+: 1731426313:0;git switch main
+: 1731426313:0;git merge prod
+: 1731426313:0;git push
+: 1731426313:0;npx vite --port=4000
+: 1731426313:0;cd Documents/Github/portfolio-site-2
+: 1731426313:0;git status
+: 1731426313:0;git add .gitignore
+: 1731426313:0;git status
+: 1731426313:0;git add .gitignore
+: 1731426313:0;git status
+: 1731426313:0;git commit -m "gitignore all .DS_Store files"
+: 1731426313:0;git status
+: 1731426313:0;git rm --cached .DS_Store
+: 1731426313:0;git rm --cached **/.DS_Store
+: 1731426313:0;git status
+: 1731426313:0;git add media/*
+: 1731426313:0;git status
+: 1731426313:0;git commit -a -m "upload media for design page"
+: 1731426313:0;git switch prod
+: 1731426313:0;git merge main
+: 1731426313:0;git rm --cached **/.DS_Store
+: 1731426313:0;git rm --cached .DS_Store
+: 1731426313:0;git merge main
+: 1731426313:0;git commit -m "gitignore all .DS_Store files"
+: 1731426313:0;git merge main
+: 1731426313:0;git commit -a -m "gitignore all .DS_Store files"
+: 1731426313:0;git merge main
+: 1731426313:0;git diff prod main
+: 1731426313:0;git branch
+: 1731426313:0;git commit -a -m "adjust design intro corner radius"
+: 1731426313:0;cd /Users/jacob/Library/CloudStorage/Dropbox/Obsidian/JFM/.obsidian/snippets 
+: 1731426313:0;touch highlight-tab-group.css
+: 1731426313:0;code highlight-tab-group.css
+: 1731426313:0;npx vite --port=4000
+: 1731426313:0;git status
+: 1731426313:0;git add media/*
+: 1731426313:0;git status
+: 1731426313:0;git commit -a -m "insert content for portfolio page, fix ham-menu and sidenav responsiveness"
+: 1731426313:0;git switch main
+: 1731426313:0;git merge prod
+: 1731426313:0;git push
+: 1731426313:0;git switch prod
+: 1731426313:0;git status
+: 1731426313:0;git commit -a -m "adjust .content padding on desktop"
+: 1731426313:0;git switch main
+: 1731426313:0;git merge prod
+: 1731426313:0;git push
+: 1731426313:0;cd Documents/Github/portfolio-site-2
+: 1731426313:0;git status
+: 1731426313:0;git swtich prod
+: 1731426313:0;git switch prod
+: 1731426313:0;git status
+: 1731426313:0;git diff prod main
+: 1731426313:0;git commit -a -m "fix textarea sizing"
+: 1731426313:0;git switch m
+: 1731426313:0;git switch main
+: 1731426313:0;git status
+: 1731426313:0;git merge prod
+: 1731426313:0;git push
+: 1731426313:0;git switch prod
+: 1731426313:0;git status
+: 1731426313:0;git commit -a -m "start fixing .content resizing"
+: 1731426313:0;git status
+: 1731426313:0;git add style.scss
+: 1731426313:0;git status
+: 1731426313:0;git diff
+: 1731426313:0;git diff --staged
+: 1731426313:0;git commit -a -m "fix background vector resizing, fix corner radius scaling on design blurb"
+: 1731426313:0;git switch main
+: 1731426313:0;git merge prod
+: 1731426313:0;git push
+: 1731426313:0;git switch prod
+: 1731426313:0;ipconfig
+: 1731426313:0;ipconfig getsummary
+: 1731426313:0;ipconfig getsummary IPv4
+: 1731426313:0;ipconfig getifaddr en0
+: 1731426313:0;npm run dev --host
+: 1731426313:0;npm run dev -- --host
+: 1731426313:0;cd Documents/Github/portfolio-site-2
+: 1731426313:0;git status
+: 1731426313:0;git diff
+: 1731426313:0;git commit -a -m "fix mobile scrolling jank"
+: 1731426313:0;git restore
+: 1731426313:0;git restore HEAD^
+: 1731426313:0;git revert
+: 1731426313:0;git commit --amend
+: 1731426313:0;git switch --detach HEAD^
+: 1731426313:0;git switch -c scrollBug
+: 1731426313:0;git commit -a -m "fix mobile scrolling jank"
+: 1731426313:0;git diff scrollBug prod
+: 1731426313:0;git status
+: 1731426313:0;git diff
+: 1731426313:0;git commit -a -m "give nav menu a max height"
+: 1731426313:0;git switch prod
+: 1731426313:0;git switch scrollBug
+: 1731426313:0;git commit -a -m "move max-heigh of nav-menu to inner div to maintain centered y-position"
+: 1731426313:0;git switch main
+: 1731426313:0;git merge scrollBug
+: 1731426313:0;git push
+: 1731426313:0;git branch -d scrollBug
+: 1731426313:0;git branch -d prod
+: 1731426313:0;git branch -D prod
+: 1731426313:0;git switch -c galleryPadding
+: 1731426313:0;git commit -a -m "fix misalignment in gallery images"
+: 1731426313:0;git switch main
+: 1731426313:0;git merge galleryPadding
+: 1731426313:0;git push
+: 1731426313:0;git status
+: 1731426313:0;git diff
+: 1731426313:0;git commit -a -m "delete outdated comment"
+: 1731426313:0;git push
+: 1731426313:0;npx vite --port=4000
+: 1731426313:0;git branch
+: 1731426313:0;git diff galleryPadding main
+: 1731426313:0;git branch -d galleryPadding
+: 1731426313:0;git switch -c screwingAround
+: 1731426313:0;npm run dev
+: 1731426313:0;git switch main
+: 1731426313:0;git branch -d screwingAround
+: 1731426313:0;git switch -c jsChange
+: 1731426313:0;git commit -a -m "remove requirement to indlude '.html' for nav buttons to accurately highlight current page\
+"
+: 1731426313:0;git switch main
+: 1731426313:0;git merge jsChange
+: 1731426313:0;git push
+: 1731426313:0;git branch -d jsChange
+: 1731426313:0;git switch -c portfolio
+: 1731426313:0;git add _redirects
+: 1731426313:0;git commit -a -m "add _redirects file for Netlify to handle routing"
+: 1731426313:0;git switch main
+: 1731426313:0;git merge portfolio
+: 1731426313:0;git push
+: 1731426313:0;git commit -a -m "check html instead of url for current button highlight\
+"
+: 1731426313:0;git branch -c htmlCheck
+: 1731426313:0;git switch htmlCheck
+: 1731426313:0;git diff
+: 1731426313:0;git diff main htmlCheck
+: 1731426313:0;git switch main
+: 1731426313:0;git revert
+: 1731426313:0;git revert HEAD --no-edit
+: 1731426313:0;git diff
+: 1731426313:0;git status
+: 1731426313:0;git push
+: 1731426313:0;git branch -d htmlCheck
+: 1731426313:0;git branch
+: 1731426313:0;git branch -d portfolio
+: 1731426313:0;git switch -c portfolio
+: 1731426313:0;git commit -a -m "take out some slop from the portfolio"
+: 1731426313:0;git switch main
+: 1731426313:0;git merge portfolio
+: 1731426313:0;git push
+: 1731426313:0;npx vite --port=4000
+: 1731426313:0;git commit -a -m "make current page button highlighting consistent on small screens"
+: 1731426313:0;git push
+: 1731426313:0;git branch
+: 1731426313:0;git diff main portfolio
+: 1731426313:0;git branch -d portfolio
+: 1731426313:0;git switch -c submitButton
+: 1731426313:0;npm run dev
+: 1731426313:0;git commit -a -m "adjust submit button hover scaling on mobile"
+: 1731426313:0;git switch main
+: 1731426313:0;git merge submitButton
+: 1731426313:0;git push
+: 1731426313:0;git branch -d submitButton
+: 1731426313:0;git branch
+: 1731426313:0;git switch -c lazyLoading
+: 1731426313:0;git switch main
+: 1731426313:0;git diff
+: 1731426313:0;git revert HEAD --no-edit
+: 1731426313:0;git diff
+: 1731426313:0;git status
+: 1731426313:0;git restore design-work.html
+: 1731426313:0;git diff
+: 1731426313:0;git push
+: 1731426313:0;git diff
+: 1731426313:0;git switch lazyLoading
+: 1731426313:0;git status
+: 1731426313:0;git commit -a -m "add lazy loading to design gallery images"
+: 1731426313:0;git switch main
+: 1731426313:0;git merge lazyLoading
+: 1731426313:0;git push
+: 1731426313:0;git commit -a -m "fix _redirects"
+: 1731426313:0;git push
+: 1731426313:0;git commit -a -m "fix _redirects"
+: 1731426313:0;git push
+: 1731426313:0;git commit -a -m "fix _redirects"
+: 1731426313:0;git push
+: 1731426313:0;git commit -a -m "replace _redirects with netlify.toml"
+: 1731426313:0;git push
+: 1731426313:0;git diff
+: 1731426313:0;git status
+: 1731426313:0;git add netlify.toml
+: 1731426313:0;git commit -a -m "replace _redirects with netlify.toml"
+: 1731426313:0;git push
+: 1731426313:0;git status
+: 1731426313:0;git commit -a -m "remove _redirects from vite.config.js"\
+
+: 1731426313:0;git push
+: 1731426313:0;curl https://sh.rustup.rs | sh
+: 1731426313:0;rustup -h
+: 1731426313:0;rustip -V
+: 1731426313:0;rustup -V
+: 1731426313:0;curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh\
+
+: 1731426313:0;cargo --version
+: 1731426313:0;cargo new hello-rust
+: 1731426313:0;ls
+: 1731426313:0;cd hello-rust
+: 1731426313:0;cargo run
+: 1731426313:0;rustup update
+: 1731426313:0;cargo run
+: 1731426313:0;cargo -V
+: 1731426313:0;nano Cargo.toml
+: 1731426313:0;cat Cargo.toml
+: 1731426313:0;cargo build
+: 1731426313:0;nano main.rs
+: 1731426313:0;ls
+: 1731426313:0;cd src
+: 1731426313:0;ls
+: 1731426313:0;nano main.rs
+: 1731426313:0;cd ..
+: 1731426313:0;cd src
+: 1731426313:0;cargo run
+: 1731426313:0;nano main.rs
+: 1731426313:0;cargo run
+: 1731426313:0;cd ..
+: 1731426313:0;rm -r hellow-rust
+: 1731426313:0;rm -r hello-rust
+: 1731426313:0;xcode-select --install
+: 1731426313:0;cd Documents/Github
+: 1731426313:0;cargo new bevy_game
+: 1731426313:0;ls
+: 1731426313:0;cd bevy-game
+: 1731426313:0;rm -r bevy_game
+: 1731426313:0;cargo new bevy-game
+: 1731426313:0;cd bevy-game
+: 1731426313:0;cargo run
+: 1731426313:0;cargo add bevy
+: 1731426313:0;cargo add bevy -F dynamic_linking
+: 1731426313:0;cargo run
+: 1731426313:0;cargo run --window
+: 1731426313:0;cargo run example animation
+: 1731426313:0;cargo run --example window
+: 1731426313:0;gh repo clone bevyengine/bevy
+: 1731426313:0;gh auth login
+: 1731426313:0;gh repo clone bevyengine/bevy
+: 1731426313:0;brew upgrade gh
+: 1731426313:0;ls
+: 1731426313:0;curl -fLo ~/.vim/autoload/plug.vim --create-dirs \\
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+: 1731426313:0;nano .vimrc
+: 1731426313:0;ls
+: 1731426313:0;ls -a
+: 1731426313:0;touch .vimrc
+: 1731426313:0;nano .vimrc
+: 1731426313:0;vim
+: 1731426313:0;git clone https://github.com/powerline/fonts.git --depth=1
+: 1731426313:0;cd fonts
+: 1731426313:0;./install.sh
+: 1731426313:0;cd ..
+: 1731426313:0;rm -rf fonts
+: 1731426313:0;man rm
+: 1731426313:0;vim /.vimrc
+: 1731426313:0;vim ~/.vimrc
+: 1731426313:0;vim
+: 1731426313:0;ls
+: 1731426313:0;cat config.log
+: 1731426313:0;vim config.log
+: 1731426313:0;brew install fzf
+: 1731426313:0;$(brew --prefix)/opt/fzf/install
+: 1731426313:0;vim ~/.zshrc
+: 1731426313:0;fzf
+: 1731426313:0;vim ~/.zshrc
+: 1731426313:0;fzf
+: 1731426313:0;vim ~/.zshrc
+: 1731426313:0;omz reload
+: 1731426313:0;vim ~/.zshrc
+: 1731426313:0;omz reload
+: 1731426313:0;vim ~/.zshrc
+: 1731426313:0;omz reload
+: 1731426313:0;fzf
+: 1731426313:0;vim ~/.zshrc
+: 1731426313:0;omz reload
+: 1731426313:0;vim ~/.zshrc
+: 1731426313:0;omz reload
+: 1731426313:0;fzf
+: 1731426313:0;fzf -preview
+: 1731426313:0;fzf --preview
+: 1731426313:0;fzf --preview 'cat {}'
+: 1731426313:0;fzf
+: 1731426313:0;imgcat -h
+: 1731426313:0;curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
+: 1731426313:0;imgcat -h
+: 1731426313:0;fzf --preview 'bat {}'
+: 1731426313:0;brew install bat
+: 1731426313:0;fzf --preview 'bat {}'
+: 1731426313:0;vim ~/.zshrc
+: 1731426313:0;omz reload
+: 1731426313:0;fzf
+: 1731426313:0;vim ~/.zshrc
+: 1731426313:0;omz reload
+: 1731426313:0;fzf
+: 1731426313:0;imgcat -h
+: 1731426313:0;vim ~/.zshrc
+: 1731426313:0;cursor ~/.zshrc
+: 1731426313:0;omz reload
+: 1731426313:0;fzf
+: 1731426313:0;imgcat three.js/icon.png
+: 1731426313:0;fzf
+: 1731426313:0;cursor ~/.zshrc
+: 1731426313:0;whereis imgcat
+: 1731426313:0;type -a imgcat
+: 1731426313:0;omz reload
+: 1731426313:0;type -a imgcat
+: 1731426313:0;fzf
+: 1731426313:0;omz reload
+: 1731426313:0;fzf
+: 1731426313:0;vim ~/.vimrc
+: 1731426313:0;vim
+: 1731426313:0;vim ~/.vimrc
+: 1731426313:0;omz reload
+: 1731426313:0;open ~/.zshrc
+: 1731426313:0;omz reload
+: 1731426313:0;source ~/.zshrc
+: 1731426313:0;cursor ~/.zshrc
+: 1731426313:0;source ~/.zshrc
+: 1731426313:0;omz reload
+: 1731426313:0;whereis imgcat
+: 1731426313:0;sed -n l
+: 1731426313:0;stty -a
+: 1731426313:0;omz reload
+: 1731426313:0;source ~/.zshrc
+: 1731426313:0;omz reload
+: 1731426313:0;source ~/.zshrc
+: 1731426313:0;omz reload
+: 1731426313:0;bindkey -l
+: 1731426313:0;omz reload
+: 1731426313:0;source ~/.zshrc
+: 1731426313:0;omz reload
+: 1731426313:0;source ~/.zshrc
+: 1731426313:0;omz reload
+: 1731426313:0;brew cask install alacritty
+: 1731426313:0;brew install alacritty
+: 1731426313:0;touch ~/.config/alacritty/alacritty.toml
+: 1731426313:0;cursor ~/.config/alacritty/alacritty.toml
+: 1731426313:0;chsh -s $(which zsh)
+: 1731426313:0;brew install tmux
+: 1731426313:0;cd /opt/homebrew/opt/tmux/share/tmux
+: 1731426313:0;ls
+: 1731426313:0;cp example_tmux.conf ~/.tmux.conf
+: 1731426313:0;cd ~
+: 1731426313:0;ls
+: 1731426313:0;ls -a
+: 1731426313:0;cursor .tmux.conf
+: 1731426313:0;tmux
+: 1731426313:0;omz reload
+: 1731426313:0;source ~/.zshrc
+: 1731426313:0;omz reload
+: 1731426313:0;omz version
+: 1731426313:0;source ~/.zshrc
+: 1731426313:0;omz reload
+: 1731426313:0;omz theme
+: 1731426313:0;omz theme list
+: 1731426313:0;omz theme set sammy
+: 1731426313:0;omz theme set mikeh
+: 1731426313:0;omz theme set josh
+: 1731426313:0;cd Downloads
+: 1731426313:0;cd ~/Desktop
+: 1731426313:0;omz theme set risto
+: 1731426313:0;git clone https://github.com/ChesterYue/ohmyzsh-theme-passion
+: 1731426313:0;cp ./ohmyzsh-theme-passion/passion.zsh-theme ~/.oh-my-zsh/themes/passion.zsh-theme
+: 1731426313:0;omz theme list
+: 1731426313:0;omz theme use oxide
+: 1731426313:0;omz theme use passion
+: 1731426313:0;brew install coreutils
+: 1731426313:0;omz theme set passion
+: 1731426313:0;cd /.oh-my-zsh
+: 1731426313:0;ls
+: 1731426313:0;ls -a
+: 1731426313:0;cd ~/.oh-my-zsh
+: 1731426313:0;ls
+: 1731426313:0;cd themes
+: 1731426313:0;ls
+: 1731426313:0;touch ./oxide.zsh-theme
+: 1731426313:0;nano ./oxide.zsh-theme
+: 1731426313:0;omz theme set oxide
+: 1731426313:0;ls
+: 1731426313:0;fzf
+: 1731426313:0;ls
+: 1731426313:0;cd bevy
+: 1731426313:0;ls
+: 1731426313:0;cargo run --example window
+: 1731426313:0;cargo run --example wireframe
+: 1731426313:0;cargo run --example hello_world
+: 1731426313:0;cd ~
+: 1731426313:0;cd ./.config
+: 1731426313:0;ls
+: 1731426313:0;cd alacritty
+: 1731426313:0;ls
+: 1731426313:0;mkdir themes
+: 1731426313:0;git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes\
+
+: 1731426313:0;nano alacritty.toml
+: 1731426313:0;cursor alacritty.toml
+: 1731426313:0;omz theme set agnoster
+: 1731426313:0;omz reload
+: 1731426313:0;cargo run --example alien_cake_addict
+: 1731426313:0;cd bevy
+: 1731426313:0;cargo run --example alien_cake_addict
+: 1731426313:0;vim ~/.config/alacritty/alacritty.toml
+: 1731426313:0;cd ~
+: 1731426313:0;spectrum_ls
+: 1731426313:0;omz theme list
+: 1731426313:0;cursor /Users/jacob/.oh-my-zsh/themes/agnoster.zsh-theme
+: 1731426313:0;cd /Users/jacob/.oh-my-zsh/themes/
+: 1731426313:0;cp agnoster.zsh-theme ./jfm-agnoster.zsh-theme
+: 1731426313:0;cursor jfm-agnoster.zsh-theme
+: 1731426313:0;cursor ~/.config/alacritty/alacritty.toml
+: 1731426313:0;omz theme use jfm-agnoster
+: 1731426313:0;cat jfm-agnoster
+: 1731426313:0;omz reload
+: 1731426313:0;cd ~/bevy
+: 1731426313:0;cargo run --example breakout
+: 1731426313:0;cd examples
+: 1731426313:0;ls
+: 1731426313:0;cd games
+: 1731426313:0;ls
+: 1731426313:0;cat breakout.rs
+: 1731426313:0;cursor breakout.rs
+: 1731426313:0;tmux
+: 1731426313:0;cd Documents/Github/bevy-game
+: 1731426313:0;cd /bevy
+: 1731426313:0;cd ./bevy
+: 1731426313:0;git status
+: 1731426313:0;git pull
+: 1731426313:0;git push
+: 1731426313:0;gh repo create
+: 1731426313:0;git push
+: 1731426313:0;git push --set-upstream origing main
+: 1731426313:0;git push --set-upstream origin main
+: 1731426313:0;git remote add origin https://github.com/JacobJFM/bevy-game.git
+: 1731426313:0;git branch -M main
+: 1731426313:0;git push -u origin main
+: 1731426313:0;git add .
+: 1731426313:0;git commit -m "Initial commit"
+: 1731426313:0;git push -u origin main
+: 1731426313:0;cd Documents/Github/bevy-game
+: 1731426313:0;git branch -c example
+: 1731426313:0;git branch
+: 1731426313:0;git push
+: 1731426313:0;git switch example
+: 1731426313:0;git push
+: 1731426313:0;git branch -b example
+: 1731426313:0;git push origin example
+: 1731426313:0;git status
+: 1731426313:0;git push -u origin example
+: 1731426313:0;git switch main
+: 1731426313:0;git status
+: 1731426313:0;git  add src/main.rs
+: 1731426313:0;git commit -m "Wipe main.rs clean to start actual project"
+: 1731426313:0;git push
+: 1731426313:0;git switch example
+: 1731426313:0;git stash
+: 1731426313:0;git switch example
+: 1731426313:0;git switch main
+: 1731426313:0;git stash list
+: 1731426313:0;git stash -h
+: 1731426313:0;git stash show
+: 1731426313:0;git stash apply
+: 1731426313:0;git stash
+: 1731426313:0;git switch example
+: 1731426313:0;git switch main
+: 1731426313:0;git stash apply
+: 1731426313:0;git stash
+: 1731426313:0;git switch example 
+: 1731426313:0;git switch main 
+: 1731426313:0;git stash apply
+: 1731426313:0;cargo run
+: 1731426313:0;git status
+: 1731426313:0;git add src/main.rs
+: 1731426313:0;git commit -m "Basic player movement"
+: 1731426313:0;git push
+: 1731426313:0;cargo run
+: 1731426313:0;git commit -a -m "Implement basic gravity, jumping, and platform physics"
+: 1731426313:0;git push
+: 1731426313:0;git switch -c paramsOnTop
+: 1731426313:0;git commit -a -m "Provide easy access to speed and other variables as constants at top of the file"
+: 1731426313:0;git switch main
+: 1731426313:0;git merge paramsOnTop
+: 1731426313:0;git push
+: 1731426313:0;cargo run
+: 1731426313:0;git branch -d paramsOnTop 
+: 1731426313:0;cargo run
+: 1731426313:0;git commit -a -m "Implement better collision detection with colliders and aabb method"
+: 1731426313:0;git push
+: 1731426313:0;git status
+: 1731426313:0;cargo run
+: 1731426313:0;git commit -a -m "Slightly adjust movement values"
+: 1731426313:0;git push
+: 1731426313:0;cargo run
+: 1731426313:0;git switch -c morePlats
+: 1731426313:0;cargo run
+: 1731426313:0;git commit -a -m "Spawn multiple platforms"
+: 1731426313:0;git switch main
+: 1731426313:0;git merge morePlats 
+: 1731426313:0;git push
+: 1731426313:0;git branch
+: 1731426313:0;git branch -d morePlats
+: 1731426313:0;git clone https://github.com/careercup/CtCI-6th-Edition-Python.git
+: 1731426313:0;cd CtCI-6th-Edition-Python
+: 1731426313:0;python chapter_01/p01_is_unique.py
+: 1731426313:0;python3 chapter_01/p01_is_unique.py
+: 1731426313:0;vim ~/.zshrc
+: 1731426313:0;source ~/.zshrc
+: 1731426313:0;vim ~/.zshrc
+: 1731426313:0;bindkkey -l
+: 1731426313:0;bindkey -l
+: 1731426313:0;bindkey
+: 1731426313:0;bi
+: 1731426313:0;cd
+: 1731426313:0;source ~/.zshrc
+: 1731426313:0;omz reload
+: 1731426313:0;cd CtCI-6th-Edition-Python
+: 1731426313:0;omz reload
+: 1731426313:0;bindkey -L
+: 1731426313:0;xev
+: 1731426313:0;brew install xev
+: 1731426313:0;cd CtCI-6th-Edition-Python
+: 1731426313:0;python chapter_01/p01_is_unique.py
+: 1731426313:0;pip install pytest
+: 1731426313:0;pip install --upgrade pip
+: 1731426313:0;pytest
+: 1731426313:0;npx vite --port=4000
+: 1731426313:0;git status
+: 1731426313:0;git add media/portfolio/*
+: 1731426313:0;git commit -a -m "Replace NMG logos with more readable versions"
+: 1731426313:0;git push
+: 1731426313:0;npx vite --port=4000
+: 1731426313:0;cd CtCI-6th-Edition-Python
+: 1731426313:0;cd chapter_1
+: 1731426313:0;ls
+: 1731426313:0;cd chapter_01
+: 1731426313:0;pytest
+: 1731426313:0;cd ..
+: 1731426313:0;switch -c jfm
+: 1731426313:0;git switch -c jfm
+: 1731426313:0;cd ~
+: 1731426313:0;spicetify update
+: 1731426313:0;spicetify apply
+: 1731426313:0;spicetify config sidebar_config 0
+: 1731426313:0;spicetify apply
+: 1731426313:0;pytest
+: 1731426313:0;pipes.sh
+: 1731426313:0;cbonsai
+: 1731426313:0;brew install cbonsai
+: 1731426313:0;cbonsai
+: 1731426313:0;npx vite --port=4000
+: 1731426313:0;clear terminal
+: 1731426313:0;git branch
+: 1731426313:0;git diff main lazyLoading
+: 1731426313:0;git branch -d lazyLoading
+: 1731426313:0;npx vite --port=4000
+: 1731426313:0;cd Documents/GitHub/portfolio-site-2
+: 1731426313:0;git branch
+: 1731426313:0;git switch -c restructure
+: 1731426313:0;npm run dev
+: 1731426313:0;git status
+: 1731426313:0;git commit -a -m "remake homepage as portfolio page"
+: 1731426313:0;git switch -c scrollingFix
+: 1731426313:0;git diff restructure scrollingFIx
+: 1731426313:0;git diff restructure scrollingFix
+: 1731426313:0;git status
+: 1731426313:0;git commit -a -m "Adjust scss so that .content scrolls, everything else is absolutulely positioned"
+: 1731426313:0;git commit -a -m "Make nav-bar smaller"
+: 1731426313:0;git commit -a -m "Set nav-bar position to 'fixed'"
+: 1731426313:0;git commit -a -m "Fix nav-bar to be on the right side of the page again"
+: 1731426313:0;git switch -c noMeta
+: 1731426313:0;git commit -a -m "Delete .meta-container class from scss, as well as all meta-container divs from html"
+: 1731426313:0;git status
+: 1731426313:0;git branch
+: 1731426313:0;git switch scrollingFix
+: 1731426313:0;git branch
+: 1731426313:0;git merge noMeta
+: 1731426313:0;git commit -a -m "Fix right border on nav-buttons during :active state"
+: 1731426313:0;git commit -a -m "Adjust spacing so at a baseline level, home page gallery looks good on desktop"
+: 1731426313:0;git branch
+: 1731426313:0;git switch restructure
+: 1731426313:0;git merge scrollingFix
+: 1731426313:0;git branch
+: 1731426313:0;git branch -d noMeta
+: 1731426313:0;git branch -d scrollingFix
+: 1731426313:0;npm run dev
+: 1731426313:0;git status
+: 1731426313:0;git add about.html
+: 1731426313:0;git diff index.html
+: 1731426313:0;git commit -a -m "Create about.html" -m "Also change from overflow:scroll to overflow:auto for #design-gallery"
+: 1731426313:0;git commit -a -m "Put some content in the about page"
+: 1731426313:0;git add media/*
+: 1731426313:0;git commit -a -m "Git add alligator sketch"
+: 1731426313:0;git commit -a -m "Slight nav-bar size adjustment"
+: 1731426313:0;git branch
+: 1731426313:0;git switch -c addSocials
+: 1731426313:0;npm run dev
+: 1731426313:0;git commit -a -m "Add Instagram Link"
+: 1731426313:0;git commit -a -m "Edit text"
+: 1731426313:0;git status
+: 1731426313:0;git diff
+: 1731426313:0;git commit -a
+: 1731426313:0;git branch
+: 1731426313:0;git switch restructure
+: 1731426313:0;git merge addSocials
+: 1731426313:0;git branch -d addSocials
+: 1731426313:0;git switch main
+: 1731426313:0;git merge restructure
+: 1731426313:0;git push
+: 1731426313:0;git branch -d restructure
+: 1731426313:0;ssh jacob@pianoman.local
+: 1731426313:0;scp Downloads/Equinox_Grand_Pianos.sf2 jacob@pianoman:~/
+: 1731426313:0;scp Downloads/Equinox_Grand_Pianos.sf2 jacob@pianoman.local:~/
+: 1731426313:0;scp Downloads/akai.sf2 jacob@pianoman.local:~/
+: 1731426313:0;ssh jacob@pianoman.local
+: 1731426313:0;spicetify apply update
+: 1731426313:0;spicetify backup apply
+: 1731426313:0;spicetify restore backup
+: 1731426313:0;spicetify backup apply
+: 1731426313:0;spicetify update
+: 1731426313:0;npx vite --port=4000
+: 1731426313:0;python chapter_03/p03_stack_of_plates.py
+: 1731426313:0;python 'Chapter 3'/3.3-stack_of_plates.py
+: 1731426313:0;python "Chapter 3/3.3-stack_of_plates.py"
+: 1731426313:0;ls
+: 1731426313:0;cd CCI\ practice\ problems
+: 1731426313:0;ls
+: 1731426313:0;cd Chapter\ 3
+: 1731426313:0;python 3.3-stack_of_plates.py
+: 1731426313:0;pytest
+: 1731426313:0;python 3.3-stack_of_plates.py
+: 1731426313:0;sudo killall coreaudiod
+: 1731426313:0;Users/jacob/Library/Application\ Support/Local/ssh-entry/lynNo9FOH.sh
+: 1731426313:0;pwd
