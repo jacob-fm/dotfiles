@@ -1,0 +1,12 @@
+theme = Aura
+font-family = JetBrains Mono NL
+cursor-style = block
+shell-integration-features = no-cursor
+macos-icon = xray
+
+macos-option-as-alt = true
+
+keybind = super+alt+k=goto_split:up
+keybind = super+alt+j=goto_split:down
+keybind = super+alt+l=goto_split:right
+keybind = super+alt+h=goto_split:left
