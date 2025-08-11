@@ -1,6 +1,6 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
-local action = wezterm.action
+local act = wezterm.action
 
 config.font = wezterm.font({
 	family = "JetBrains Mono NL",
@@ -18,37 +18,45 @@ config.keys = {
 	{
 		key = "\\",
 		mods = "CMD",
-		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+		action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }),
 	},
 	{
 		key = "\\",
 		mods = "SHIFT|CMD",
-		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
+		action = act.SplitVertical({ domain = "CurrentPaneDomain" }),
 	},
 	{
 		key = "w",
 		mods = "CMD",
-		action = wezterm.action.CloseCurrentPane({ confirm = false }),
+		action = act.CloseCurrentPane({ confirm = false }),
 	},
 	{
 		key = "k",
 		mods = "CMD",
-		action = wezterm.action.ActivatePaneDirection("Up"),
+		action = act.ActivatePaneDirection("Up"),
 	},
 	{
 		key = "j",
 		mods = "CMD",
-		action = wezterm.action.ActivatePaneDirection("Down"),
+		action = act.ActivatePaneDirection("Down"),
 	},
 	{
 		key = "h",
 		mods = "CMD",
-		action = wezterm.action.ActivatePaneDirection("Left"),
+		action = act.ActivatePaneDirection("Left"),
 	},
 	{
 		key = "l",
 		mods = "CMD",
-		action = wezterm.action.ActivatePaneDirection("Right"),
+		action = act.ActivatePaneDirection("Right"),
+	},
+	{
+		key = "k",
+		mods = "CMD",
+		action = act.Multiple({
+			act.ClearScrollback("ScrollbackAndViewport"),
+			act.SendKey({ key = "L", mods = "CTRL" }),
+		}),
 	},
 }
 
