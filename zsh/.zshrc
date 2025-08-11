@@ -10,6 +10,8 @@ export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.spicetify:$PATH
 export PATH=$HOME/.iterm2:$PATH
 export PATH="/opt/homebrew/bin:$PATH"
+# WezTerm
+export PATH="$PATH/Applications/WezTerm.app/Contents/MacOS"
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
