@@ -8,4 +8,9 @@ config.font = wezterm.font({
 config.font_size = 14.0
 config.line_height = 1.0
 
+config.window_decorations = "RESIZE"
+
+config.window_background_opacity = 0.5
+config.macos_window_background_blur = 28
+
 return config
