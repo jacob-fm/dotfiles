@@ -6,14 +6,11 @@ vim.g.maplocalleader = "\\"
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
--- leader -> tab = next tab
-vim.keymap.set("n", "<leader><Tab>", "<cmd>tabnext<cr>", { silent = true })
--- leader -> shift+tab = previous tab
-vim.keymap.set("n", "<leader><S-Tab>", "<cmd>tabprevious<cr>", { silent = true })
--- leader -> number = go to tab of that number
+-- bufferline: go to different tabs
 for i = 1, 9 do
-	vim.keymap.set("n", "<leader>" .. i, "<cmd>tabn " .. i .. "<cr>", { silent = true })
+	vim.keymap.set("n", "<leader>" .. i, "<cmd>BufferLineGoToBuffer" .. i .. "<cr>", { silent = true })
 end
+vim.keymap.set("n", "<leader>$", "<cmd>BufferLineGoToBuffer -1<cr>", { silent = true })
 
 -- Saving
 -- Normal mode
