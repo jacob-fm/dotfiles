@@ -64,6 +64,9 @@ automatically-unhide-macos-hidden-apps = false
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 # 'main' binding mode must be always presented
 # Fallback value (if you omit the key): mode.main.binding = {}
+# # define hyper key
+# [key-mapping.key-notation-to-key-code]
+#     hyper = 'alt-shift-cmd-ctrl'
 [mode.main.binding]
 
     # All possible keys:
@@ -94,8 +97,8 @@ automatically-unhide-macos-hidden-apps = false
     # '''
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-    alt-slash = 'layout tiles horizontal vertical'
-    alt-comma = 'layout accordion horizontal vertical'
+    alt-shift-cmd-ctrl-leftSquareBracket = 'layout tiles horizontal vertical'
+    alt-shift-cmd-ctrl-rightSquareBracket = 'layout accordion horizontal vertical'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
     alt-h = 'focus left'
