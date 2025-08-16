@@ -32,22 +32,22 @@ config.keys = {
 	},
 	{
 		key = "k",
-		mods = "CMD",
+		mods = "SHIFT|CTRL",
 		action = act.ActivatePaneDirection("Up"),
 	},
 	{
 		key = "j",
-		mods = "CMD",
+		mods = "SHIFT|CTRL",
 		action = act.ActivatePaneDirection("Down"),
 	},
 	{
 		key = "h",
-		mods = "CMD",
+		mods = "SHIFT|CTRL",
 		action = act.ActivatePaneDirection("Left"),
 	},
 	{
 		key = "l",
-		mods = "CMD",
+		mods = "SHIFT|CTRL",
 		action = act.ActivatePaneDirection("Right"),
 	},
 	{
