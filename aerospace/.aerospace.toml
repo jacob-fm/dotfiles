@@ -142,6 +142,9 @@ alt-shift-8 = 'move-node-to-workspace 8'
 alt-shift-9 = 'move-node-to-workspace 9'
 alt-shift-0 = 'move-node-to-workspace 10'
 
+# moving across monitors
+ctrl-alt-cmd-m = 'move-node-to-monitor --wrap-around --focus-follows-window next'
+
 # # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 # alt-tab = ['list-workspaces --monitor all --empty no', 'workspace next --wrap-around' ]
 # # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
