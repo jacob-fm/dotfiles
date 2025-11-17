@@ -2,6 +2,8 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 local act = wezterm.action
 
+config.color_scheme = "Panda (Gogh)"
+
 config.font = wezterm.font({
 	family = "JetBrainsMono Nerd Font",
 })
@@ -11,8 +13,8 @@ config.line_height = 1.0
 config.window_decorations = "RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
 
-config.window_background_opacity = 0.8
-config.macos_window_background_blur = 28
+config.window_background_opacity = 0.9
+config.macos_window_background_blur = 38
 
 config.keys = {
 	{
