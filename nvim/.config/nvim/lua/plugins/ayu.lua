@@ -14,8 +14,5 @@ return {
         VertSplit = { bg = "None" },
       },
     })
-
-    -- enable theme
-    require("ayu").colorscheme()
   end,
 }
