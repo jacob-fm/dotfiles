@@ -821,7 +821,7 @@ require('lazy').setup({
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme 'tokyonight'
+      vim.cmd.colorscheme 'tokyonight-moon'
     end,
   },
 
@@ -860,6 +860,9 @@ require('lazy').setup({
       local statusline = require 'mini.statusline'
       -- set use_icons to true if you have a Nerd Font
       statusline.setup { use_icons = vim.g.have_nerd_font }
+      -- set statusline colors, respecting mini.statusline
+      vim.api.nvim_set_hl(0, 'MiniStatuslineFilename', { fg = '#ffffff' }) -- active window
+      vim.api.nvim_set_hl(0, 'MiniStatuslineInactive', { fg = '#ffffff' }) -- inactive windows
 
       -- You can configure sections in the statusline by overriding their
       -- default behavior. For example, here we set the section for
