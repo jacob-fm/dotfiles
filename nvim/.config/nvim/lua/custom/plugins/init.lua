@@ -7,6 +7,11 @@
 ---@type LazySpec
 return {
   { 'windwp/nvim-ts-autotag', opts = {} },
+  {
+    'pmizio/typescript-tools.nvim',
+    dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
+    opts = {},
+  },
   { 'brenoprata10/nvim-highlight-colors', opts = {
     enable_tailwind = true,
   } },

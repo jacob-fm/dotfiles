@@ -613,11 +613,7 @@ require('lazy').setup({
         pyright = {},
         -- rust_analyzer = {},
         --
-        -- Some languages (like typescript) have entire language plugins that can be useful:
-        --    https://github.com/pmizio/typescript-tools.nvim
-        --
-        -- But for many setups, the LSP (`ts_ls`) will work just fine
-        ts_ls = {},
+        -- TypeScript is handled by typescript-tools.nvim (see lua/custom/plugins/init.lua)
 
         stylua = {}, -- Used to format Lua code
 
