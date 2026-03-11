@@ -62,8 +62,7 @@ Kickstart Guide:
 
     This should be the first place you go to look when you're stuck or confused
     with something. It's one of my favorite Neovim features.
-
-    MOST IMPORTANTLY, we provide a keymap "<space>sh" to [s]earch the [h]elp documentation,
+MOST IMPORTANTLY, we provide a keymap "<space>sh" to [s]earch the [h]elp documentation,
     which is very useful when you're not exactly sure of what you're looking for.
 
   I have left several `:help X` comments throughout the init.lua
@@ -172,6 +171,10 @@ vim.o.confirm = true
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+
+-- ctrl + s to save
+vim.keymap.set('n', '<C-s>', '<cmd>w<CR>')
+vim.keymap.set('i', '<C-s>', '<Esc><cmd>w<CR>')
 
 -- Diagnostic Config & Keymaps
 -- See :help vim.diagnostic.Opts
