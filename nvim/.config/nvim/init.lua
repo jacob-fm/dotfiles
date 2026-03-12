@@ -614,6 +614,7 @@ require('lazy').setup({
         -- rust_analyzer = {},
         --
         -- TypeScript is handled by typescript-tools.nvim (see lua/custom/plugins/init.lua)
+        tailwindcss = {},
 
         stylua = {}, -- Used to format Lua code
 
