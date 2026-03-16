@@ -86,6 +86,9 @@ plugins=(
 	fast-syntax-highlighting
 )
 
+# Docker CLI completions
+fpath=(/Users/jacob/.docker/completions $fpath)
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -150,11 +153,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH=$PATH:/Users/jacob/.spicetify
 . "/Users/jacob/.deno/env"
-# The following lines have been added by Docker Desktop to enable Docker CLI completions.
-fpath=(/Users/jacob/.docker/completions $fpath)
-autoload -Uz compinit
-compinit
-# End of Docker CLI completions
 # zoxide
 eval "$(zoxide init zsh)"
 
