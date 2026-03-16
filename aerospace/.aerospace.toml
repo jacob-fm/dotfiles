@@ -139,12 +139,7 @@ alt-shift-0 = 'move-node-to-workspace 10'
 # moving across monitors
 ctrl-alt-cmd-m = 'move-node-to-monitor --wrap-around --focus-follows-window next'
 
-# # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
-# alt-tab = ['list-workspaces --monitor all --empty no', 'workspace next --wrap-around' ]
-# # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
-# alt-shift-tab = 'workspace prev --wrap-around'
-alt-tab = 'exec-and-forget aerospace list-workspaces --monitor all --empty no | aerospace workspace --wrap-around next'
-alt-shift-tab = 'exec-and-forget aerospace list-workspaces --monitor all --empty no | aerospace workspace --wrap-around prev'
+alt-tab = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 alt-shift-semicolon = 'mode service'
 
