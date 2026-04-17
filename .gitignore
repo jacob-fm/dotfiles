@@ -1,3 +1,6 @@
 .DS_Store
 
 spicetify/.config/spicetify/Themes/
+
+zsh/.zsh_history
+zsh/.zsh_sessions/
