@@ -714,6 +714,7 @@ require('lazy').setup({
         javascriptreact = { 'prettier' },
         typescriptreact = { 'prettier' },
         html = { 'prettier' },
+        markdown = { 'prettier' },
       },
     },
   },
