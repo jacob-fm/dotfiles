@@ -3,6 +3,8 @@
 --
 -- See the kickstart.nvim README for more information
 
+vim.filetype.add { extension = { str = 'javascript' } }
+
 ---@module 'lazy'
 ---@type LazySpec
 return {
@@ -38,7 +40,21 @@ return {
   },
   {
     'gruvw/strudel.nvim',
-    build = 'npm ci',
-    config = function() require('strudel').setup() end,
+    build = 'npm install puppeteer@^24 && npm install',
+    config = function()
+      require('strudel').setup {
+        update_on_save = true,
+        -- headless = true,
+      }
+    end,
+    keys = {
+      { '<leader>sl', function() require('strudel').launch() end, desc = 'Launch Strudel' },
+      { '<leader>sq', function() require('strudel').quit() end, desc = 'Quit Strudel' },
+      { '<leader>st', function() require('strudel').toggle() end, desc = 'Strudel Toggle Play/Stop' },
+      { '<leader>su', function() require('strudel').update() end, desc = 'Strudel Update' },
+      { '<leader>ss', function() require('strudel').stop() end, desc = 'Strudel Stop Playback' },
+      { '<leader>sb', function() require('strudel').set_buffer() end, desc = 'Strudel set current buffer' },
+      { '<leader>sx', function() require('strudel').execute() end, desc = 'Strudel set current buffer and update' },
+    },
   },
 }
