@@ -3,6 +3,7 @@
 --
 -- See the kickstart.nvim README for more information
 
+-- to treat strudel files as js
 vim.filetype.add { extension = { str = 'javascript' } }
 
 ---@module 'lazy'
@@ -17,6 +18,18 @@ return {
   { 'brenoprata10/nvim-highlight-colors', opts = {
     enable_tailwind = true,
   } },
+  {
+    'benomahony/uv.nvim',
+    -- Optional filetype to lazy load when you open a python file
+    -- ft = { python }
+    -- Optional dependency, but recommended:
+    dependencies = {
+      'folke/snacks.nvim' or 'nvim-telescope/telescope.nvim',
+    },
+    opts = {
+      picker_integration = true,
+    },
+  },
   -- nvim v0.8.0
   {
     'kdheepak/lazygit.nvim',
