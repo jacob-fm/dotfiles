@@ -184,7 +184,7 @@ vim.keymap.set({ 'n', 'v' }, '<leader>tq', '<cmd>tabclose<CR>')
 vim.keymap.set({ 'n', 'v' }, '<leader>tn', '<cmd>tabnext<CR>')
 vim.keymap.set({ 'n', 'v' }, '<leader>tp', '<cmd>tabprevious<CR>')
 -- leader -> t -> t to open a terminal in a horizontal split
-vim.keymap.set('n', '<leader>tt', '<cmd>botright split | terminal<CR>', { desc = 'Open [T]erminal' })
+vim.keymap.set('n', '<leader>tt', '<cmd>botright split | terminal<CR>i', { desc = 'Open [T]erminal' })
 
 -- Diagnostic Config & Keymaps
 -- See :help vim.diagnostic.Opts
