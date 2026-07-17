@@ -183,6 +183,8 @@ vim.keymap.set({ 'n', 'v' }, '<leader>tq', '<cmd>tabclose<CR>')
 -- leader -> t -> n or p for :tabnext or :tabprevious
 vim.keymap.set({ 'n', 'v' }, '<leader>tn', '<cmd>tabnext<CR>')
 vim.keymap.set({ 'n', 'v' }, '<leader>tp', '<cmd>tabprevious<CR>')
+-- leader -> t -> t to open a terminal in a horizontal split
+vim.keymap.set('n', '<leader>tt', '<cmd>botright split | terminal<CR>', { desc = 'Open [T]erminal' })
 
 -- Diagnostic Config & Keymaps
 -- See :help vim.diagnostic.Opts
@@ -419,7 +421,7 @@ require('lazy').setup({
       -- See `:help telescope.builtin`
       local builtin = require 'telescope.builtin'
       vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
-      vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = '[S]earch [K]eymaps' })
+      vim.keymap.set('n', '<leader>sk', function() builtin.keymaps { modes = { 'n', 'i', 'c', 'x', 't' } } end, { desc = '[S]earch [K]eymaps' })
       vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = '[S]earch [F]iles' })
       vim.keymap.set('n', '<leader>ss', builtin.builtin, { desc = '[S]earch [S]elect Telescope' })
       vim.keymap.set({ 'n', 'v' }, '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
