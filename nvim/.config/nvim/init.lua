@@ -222,6 +222,10 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 --  Use CTRL+<hjkl> to switch between windows
 --
 --  See `:help wincmd` for a list of all window commands
+-- <leader>w mirrors the <C-w> window-command prefix. This is handled entirely by
+-- which-key's `proxy` spec entry (see below), which both shows the menu and
+-- executes the command. An explicit keymap here would suppress the which-key popup.
+
 vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
@@ -332,9 +336,20 @@ require('lazy').setup({
       -- Document existing key chains
       spec = {
         { '<leader>s', group = '[S]earch', mode = { 'n', 'v' } },
-        { '<leader>t', group = '[T]oggle' },
+        { '<leader>t', group = '[T]oggle or [T]ab' },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
         { 'gr', group = 'LSP Actions', mode = { 'n' } },
+        { '<leader>w', proxy = '<C-w>', group = '[W]indow' },
+        -- Augment which-key's built-in `windows` preset with commands it omits,
+        -- so they show in the menu and work through the <leader>w proxy.
+        { '<C-w>n', desc = 'New window' },
+        { '<C-w>c', desc = 'Close window' },
+        { '<C-w>p', desc = 'Go to previous window' },
+        { '<C-w>r', desc = 'Rotate windows downwards/rightwards' },
+        { '<C-w>R', desc = 'Rotate windows upwards/leftwards' },
+        { '<C-w>t', desc = 'Go to top-left window' },
+        { '<C-w>b', desc = 'Go to bottom-right window' },
+        { '<C-w>f', desc = 'Edit file under cursor in split' },
       },
     },
   },
