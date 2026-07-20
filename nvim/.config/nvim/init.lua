@@ -176,8 +176,8 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('n', '<C-s>', '<cmd>w<CR>')
 vim.keymap.set('i', '<C-s>', '<Esc><cmd>w<CR>')
 
--- leader -> t -> c for :tabnew
-vim.keymap.set({ 'n', 'v' }, '<leader>tc', '<cmd>tabnew<CR>')
+-- leader -> t -> e for :tabnew
+vim.keymap.set({ 'n', 'v' }, '<leader>te', '<cmd>tabnew<CR>')
 -- leader -> t -> q for :tabclose
 vim.keymap.set({ 'n', 'v' }, '<leader>tq', '<cmd>tabclose<CR>')
 -- leader -> t -> n or p for :tabnext or :tabprevious
