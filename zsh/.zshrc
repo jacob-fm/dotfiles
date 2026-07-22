@@ -112,6 +112,12 @@ bindkey -v
 ZVM_SYSTEM_CLIPBOARD_ENABLED=true
 # for faster startup
 ZVM_LAZY_KEYBINDINGS=false
+
+# Ctrl+F: fuzzy-pick a project and jump to its tmux session (sessionizer).
+# Bound in zvm_after_init so zsh-vi-mode doesn't clobber the binding.
+function zvm_after_init() {
+  bindkey -s '^f' 'tmux-sessionizer\n'
+}
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
