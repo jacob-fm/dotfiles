@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# fzf preview: images at full resolution via the kitty graphics protocol,
+# text via bat, directories via tree.
+
+file=$1
+type=$(file --brief --dereference --mime-type -- "$file" 2>/dev/null)
+
+if [[ $type == image/* ]]; then
+  if command -v kitten >/dev/null 2>&1; then
+    # --unicode-placeholder attaches the image to text cells, so fzf can
+    # clip/erase it like text; also survives tmux (passthrough).
+    # The sed dance folds icat's trailing reset line into the previous line,
+    # which otherwise confuses fzf's scroll indicator.
+    kitten icat --clear --transfer-mode=memory --unicode-placeholder \
+      --stdin=no --place="${FZF_PREVIEW_COLUMNS}x${FZF_PREVIEW_LINES}@0x0" -- "$file" |
+      sed '$d' | sed $'$s/$/\e[m/'
+  else
+    chafa -f symbols -s "${FZF_PREVIEW_COLUMNS}x${FZF_PREVIEW_LINES}" -- "$file"
+  fi
+elif [[ -d $file ]]; then
+  if command -v tree >/dev/null 2>&1; then
+    tree -C -- "$file" | head -200
+  else
+    ls -lahG -- "$file"
+  fi
+elif [[ -f $file ]]; then
+  bat --style=numbers --color=always -- "$file" 2>/dev/null || cat -- "$file"
+else
+  printf '%s\n' "$file"
+fi

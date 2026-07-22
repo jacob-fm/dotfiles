@@ -135,19 +135,11 @@ source /Users/jacob/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # fzf default options
-# currently, if previewing an image file, uses imgcat
-# otherwise tries bat, then cat
+# preview via ~/.local/bin/fzf-preview (dotfiles/fzf): images at full
+# resolution through the kitty graphics protocol, text via bat, dirs via tree
 export FZF_DEFAULT_OPTS='
   --height 40% --layout reverse --border
-  --preview "
-  if file --mime-type {} | grep -qF image/; then
-    imgcat --width $FZF_PREVIEW_COLUMNS --height $FZF_PREVIEW_LINES {}
-  else
-    ([[ -f {} ]] && (bat --style=numbers --color=always {} || cat {})) ||
-    ([[ -d {} ]] && (tree -C {} | less)) ||
-    echo {} 2> /dev/null
-  fi
-  "
+  --preview "fzf-preview {}"
 '
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
