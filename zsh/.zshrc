@@ -51,7 +51,7 @@ export WORDCHARS=''
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -84,6 +84,7 @@ plugins=(
 	git
 	zsh-autosuggestions
 	fast-syntax-highlighting
+  zsh-vi-mode
 )
 
 # Docker CLI completions
@@ -105,6 +106,12 @@ else
   export EDITOR='nvim'
 fi
 
+# enable vi mode (necessary for zsh-vi-mode plygin to work)
+bindkey -v
+# use system clipboard with zsh-vi-mode
+ZVM_SYSTEM_CLIPBOARD_ENABLED=true
+# for faster startup
+ZVM_LAZY_KEYBINDINGS=false
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
