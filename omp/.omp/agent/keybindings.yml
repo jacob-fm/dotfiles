@@ -1,0 +1,12 @@
+# oh-my-pi keybinding remaps. Keys are action IDs; values are a chord or list of chords.
+# See `/hotkeys` in a session for the full list of active bindings.
+
+# Menu / select-list navigation: keep the arrow keys, add Emacs-style Ctrl+P / Ctrl+N.
+# (Menus also accept j/k by default. These `tui.select.*` bindings only apply while a
+#  menu/overlay is focused, so they don't clash with the editor's Ctrl+P model-cycle.)
+tui.select.up:
+  - Up
+  - Ctrl+P
+tui.select.down:
+  - Down
+  - Ctrl+N
