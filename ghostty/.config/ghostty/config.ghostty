@@ -16,6 +16,10 @@ keybind = super+alt+shift+j=resize_split:down,25
 keybind = super+alt+shift+l=resize_split:right,25
 keybind = super+alt+shift+h=resize_split:left,25
 
+# these are important for Oh My Pi
+keybind = alt+backspace=text:\x1b\x7f
+keybind = shift+enter=text:\n
+
 # Vim-mode keybindings for Ghostty.
 #
 # Note: We're missing a number of actions to produce a better vim experience.

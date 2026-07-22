@@ -1,0 +1,17 @@
+modelRoles: 
+  default: anthropic/claude-opus-4-8
+symbolPreset: nerd
+theme: 
+  dark: dark-monokai
+setupVersion: 1
+showHardwareCursor: true
+display: 
+  showTokenUsage: true
+  shimmer: kitt
+statusLine: 
+  showHookStatus: true
+  compactThinkingLevel: false
+  transparent: true
+  sessionAccent: true
+  separator: powerline-thin
+  preset: default

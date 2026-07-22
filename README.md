@@ -69,5 +69,5 @@ stow -n -v foo    # dry run — show what would happen without doing it
 
 ## Existing packages
 
-`aerospace`, `ghostty`, `lazygit`, `nvim`, `p10k`, `spicetify`,
+`aerospace`, `fzf`, `ghostty`, `lazygit`, `nvim`, `omp`, `p10k`, `spicetify`,
 `spotify-player`, `tmux`, `wezterm`, `yazi`, `zsh`
