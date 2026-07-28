@@ -1,13 +1,14 @@
 modelRoles: 
-  default: anthropic/claude-opus-4-8
+  default: anthropic/claude-opus-5:high
 symbolPreset: nerd
 theme: 
-  dark: dark-monokai
+  dark: mahogany
 setupVersion: 1
 showHardwareCursor: true
 display: 
   showTokenUsage: true
-  shimmer: kitt
+  shimmer: classic
+  smoothStreaming: false
 statusLine: 
   showHookStatus: true
   compactThinkingLevel: false
@@ -15,3 +16,6 @@ statusLine:
   sessionAccent: true
   separator: powerline-thin
   preset: default
+tui: 
+  scrollbackRebuild: true
+hideThinkingBlock: true
