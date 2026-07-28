@@ -16,6 +16,20 @@ keybind = super+alt+shift+j=resize_split:down,25
 keybind = super+alt+shift+l=resize_split:right,25
 keybind = super+alt+shift+h=resize_split:left,25
 
+# tmux splits: cmd+ctrl+d / cmd+ctrl+shift+d send private escape sequences
+# that root-table bindings in .tmux.conf turn into panes. Outside tmux the
+# bytes are harmlessly ignored by zsh. cmd+d stays the native Ghostty split.
+keybind = super+ctrl+d=text:\x1b[300~
+keybind = super+ctrl+shift+d=text:\x1b[301~
+# cmd+ctrl+hjkl: navigate tmux panes (vim motions, no prefix). Same private-
+# sequence trick; root-table bindings in .tmux.conf do select-pane.
+keybind = super+ctrl+h=text:\x1b[311~
+keybind = super+ctrl+j=text:\x1b[312~
+keybind = super+ctrl+k=text:\x1b[313~
+keybind = super+ctrl+l=text:\x1b[314~
+# cmd+ctrl+w: close the current tmux pane (confirms first)
+keybind = super+ctrl+w=text:\x1b[315~
+
 # these are important for Oh My Pi
 keybind = alt+backspace=text:\x1b\x7f
 keybind = shift+enter=text:\n

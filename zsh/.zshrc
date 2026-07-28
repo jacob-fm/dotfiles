@@ -114,9 +114,17 @@ ZVM_SYSTEM_CLIPBOARD_ENABLED=true
 ZVM_LAZY_KEYBINDINGS=false
 
 # Ctrl+F: fuzzy-pick a project and jump to its tmux session (sessionizer).
-# Bound in zvm_after_init so zsh-vi-mode doesn't clobber the binding.
+# Bound in zvm_after_init so zsh-vi-mode doesn't clobber the bindings.
 function zvm_after_init() {
   bindkey -s '^f' 'tmux-sessionizer\n'
+  # cmd+ctrl+d/shift+d (splits) and cmd+ctrl+hjkl (pane nav) send \e[3NN~
+  # sequences for tmux (see ghostty config.ghostty); swallow when not in tmux
+  local m seq
+  for m in viins vicmd; do
+    for seq in 300 301 311 312 313 314 315; do
+      bindkey -M $m -s "\e[${seq}~" ''
+    done
+  done
 }
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
