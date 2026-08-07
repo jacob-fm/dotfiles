@@ -56,6 +56,26 @@ Say you want to add a tool whose config lives at `~/.config/foo/foo.toml`.
    files you add to the package later (e.g. `keymap.toml`) show up automatically
    without re-stowing.
 
+### When *not* to let stow link a whole directory
+
+That directory-linking ("tree folding") is only safe for paths this repo fully
+owns, like `~/.config/foo`. It is a trap for **shared** directories that other
+tools also write into — `~/.local/bin` above all, where `pipx`, `pip --user`,
+`cargo` and `npm -g` drop binaries.
+
+If `~/.local/bin` is a symlink to a package dir, every one of those tools writes
+straight into this git repo. Keep it a **real directory** so stow links the
+individual files instead:
+
+```sh
+mkdir -p ~/.local/bin     # create the dir *before* stowing
+cd ~/dotfiles && stow fzf
+ls -la ~/.local/bin       # want individual file symlinks, not one dir symlink
+```
+
+Verify with `[ -L ~/.local/bin ] && echo folded`. Stow will not re-fold a
+directory that already exists, so this survives `stow -R` and `stow -D`.
+
 ## Handy commands
 
 Run these from `~/dotfiles`:
