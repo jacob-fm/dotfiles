@@ -79,4 +79,52 @@ return {
     -- No need for lazy.nvim to lazy-load it.
     lazy = false,
   },
+  -- p5.js
+  {
+    'prjctimg/p5.nvim',
+    dependencies = {
+      'nvim-lua/plenary.nvim',
+    },
+    config = function()
+      -- p5.nvim shells out to a hardcoded `python3` for its websocket dev server,
+      -- so the venv holding `websockets` has to win on PATH. Homebrew's python is
+      -- externally-managed (PEP 668) and can't host the module itself.
+      -- Bootstrap: python3 -m venv ~/.local/venvs/p5 && ~/.local/venvs/p5/bin/pip install websockets
+      local venv = vim.fn.expand '~/.local/venvs/p5'
+      if vim.uv.fs_stat(venv .. '/bin/python3') then vim.env.PATH = venv .. '/bin:' .. vim.env.PATH end
+
+      -- p5.nvim's .gitignore excludes `assets/inject/` then tries to re-include the
+      -- scripts inside it -- a pattern git cannot honour, so no clone ever has them.
+      -- server.py reads them into INJECT_LIVERELOAD / INJECT_CONSOLE and injects
+      -- without complaint when they're empty, so live reload and `:P5 console` both
+      -- silently do nothing. Install our replacements.
+      local inject = vim.fn.stdpath 'data' .. '/lazy/p5.nvim/assets/inject'
+      for _, name in ipairs { 'livereload.js', 'console.js' } do
+        local src = vim.fn.stdpath 'config' .. '/assets/p5/' .. name
+        local dst = inject .. '/' .. name
+        if vim.uv.fs_stat(src) then
+          local want = vim.fn.readfile(src)
+          local have = vim.uv.fs_stat(dst) and vim.fn.readfile(dst) or nil
+          if not have or table.concat(have, '\n') ~= table.concat(want, '\n') then
+            vim.fn.mkdir(inject, 'p')
+            vim.fn.writefile(want, dst)
+          end
+        end
+      end
+
+      -- NOTE: live_reload goes at the *top level*, not under `server`, despite what
+      -- p5.nvim's own defaults table suggests. server.lua reads `S.config.live_reload`
+      -- from the top level, and init.lua merges opts in wholesale — so anything nested
+      -- under `server` never reaches the reader.
+      require('p5').setup {
+        live_reload = {
+          enabled = true,
+          port = 12002,
+          debounce_ms = 300,
+          watch_extensions = { '.js', '.css', '.html', '.json' },
+          exclude_dirs = { '.git', 'node_modules', 'dist', 'build' },
+        },
+      }
+    end,
+  },
 }
