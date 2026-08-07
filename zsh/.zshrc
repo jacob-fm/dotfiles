@@ -124,6 +124,9 @@ function zvm_after_init() {
     for seq in 300 301 311 312 313 314 315; do
       bindkey -M $m -s "\e[${seq}~" ''
     done
+    # cmd+opt+w (\e[316~) is "close this surface now". In tmux it detaches with
+    # SIGHUP; outside tmux, exit the shell so Ghostty closes the surface too.
+    bindkey -M $m -s "\e[316~" '^Uexit^M'
   done
 }
 # Compilation flags

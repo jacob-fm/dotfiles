@@ -27,8 +27,16 @@ keybind = super+ctrl+h=text:\x1b[311~
 keybind = super+ctrl+j=text:\x1b[312~
 keybind = super+ctrl+k=text:\x1b[313~
 keybind = super+ctrl+l=text:\x1b[314~
-# cmd+ctrl+w: close the current tmux pane (confirms first)
+# cmd+ctrl+w: close the current tmux pane (kill-pane, no confirm)
 keybind = super+ctrl+w=text:\x1b[315~
+# cmd+w keeps Ghostty's default confirmation prompt. tmux hides the inner
+# shell's OSC 133 prompt markers, so Ghostty always thinks a process is
+# running and always asks.
+# cmd+opt+w = close this surface NOW, no prompt: the private sequence maps to
+# `detach-client -P` in .tmux.conf, which SIGHUPs the shell owning the tmux
+# client. The child exits on its own, so Ghostty closes the surface without
+# asking. The tmux session survives on the server and can be reattached.
+keybind = super+alt+w=text:\x1b[316~
 
 # these are important for Oh My Pi
 keybind = alt+backspace=text:\x1b\x7f

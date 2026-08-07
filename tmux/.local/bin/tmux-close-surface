@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+# tmux-close-surface <client-pid> [client-tty]
+#
+# Close the terminal surface (Ghostty window/tab/split) that hosts a tmux
+# client, with no "are you sure?" prompt.
+#
+# Ghostty only confirms when *it* is about to kill a running process, so we
+# instead make the surface's own process exit: detach the client, then SIGHUP
+# the root process on that tty. Ghostty sees its child exit normally and closes
+# the surface silently.
+#
+# `detach-client -P` can't do this alone: it SIGHUPs the client's immediate
+# parent, which is tmux-sessionizer (or any wrapper script), not the shell that
+# owns the surface. So walk up instead: keep climbing while the parent shares
+# the client's controlling tty. That lands on the tty's root process (on macOS,
+# Ghostty's `login`), since the terminal app itself has no controlling tty.
+#
+# The tmux session is only detached -- it and everything in it keep running.
+set -uo pipefail
+
+pid=${1:?usage: tmux-close-surface <client-pid> [client-tty]}
+target_tty=${2:-}
+
+proc_tty() { ps -o tty= -p "$1" 2>/dev/null | tr -d '[:space:]'; }
+
+tty_name=$(proc_tty "$pid")
+[[ -n $tty_name && $tty_name != "??" ]] || exit 0
+
+root=$pid
+while :; do
+    parent=$(ps -o ppid= -p "$root" 2>/dev/null | tr -d '[:space:]')
+    [[ -n $parent && $parent -gt 1 ]] || break
+    [[ $(proc_tty "$parent") == "$tty_name" ]] || break
+    root=$parent
+done
+
+[[ -n $target_tty ]] && tmux detach-client -t "$target_tty" 2>/dev/null
+kill -HUP "$root" 2>/dev/null
+exit 0
