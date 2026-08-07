@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+# stow-session-dirs — print one tmux-sessionizer entry per stow package.
+#
+# In a stow repo each package is a tunnel of single-child directories leading to
+# the directory that actually holds the config (nvim -> nvim/.config/nvim). This
+# walks that tunnel and prints where it ends, so every package lands at its own
+# depth instead of sharing one hand-tuned :N depth in tmux-sessionizer.conf.
+#
+# usage: stow-session-dirs [ROOT]     (ROOT defaults to ~/dotfiles)
+
+root="${1:-$HOME/dotfiles}"
+
+if [[ ! -d $root ]]; then
+    echo "stow-session-dirs: not a directory: $root" >&2
+    exit 1
+fi
+
+# Names that never count as package content when deciding whether a directory
+# is just a link in the tunnel.
+IGNORED=(.git .DS_Store)
+
+is_ignored() {
+    local name
+    for name in "${IGNORED[@]}"; do
+        [[ $1 == "$name" ]] && return 0
+    done
+    return 1
+}
+
+# Descend while the directory has exactly one non-ignored child and that child
+# is a directory. Stops at the first directory with real content (files, or
+# several children), which is where the session should open.
+collapse() {
+    local dir="$1" child count only depth=0
+
+    while [[ $depth -lt 8 ]]; do
+        count=0
+        only=""
+        for child in "$dir"/* "$dir"/.[!.]*; do
+            [[ -e $child ]] || continue     # unmatched glob stays literal in bash 3.2
+            is_ignored "${child##*/}" && continue
+            count=$((count + 1))
+            only="$child"
+        done
+
+        [[ $count -eq 1 && -d $only ]] || break
+        dir="$only"
+        depth=$((depth + 1))
+    done
+
+    printf '%s\n' "$dir"
+}
+
+for pkg in "$root"/*; do    # unquoted-glob loop skips .git, .claude, and README.md
+    [[ -d $pkg ]] || continue
+    collapse "$pkg"
+done
