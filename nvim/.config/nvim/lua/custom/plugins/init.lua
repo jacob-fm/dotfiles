@@ -79,6 +79,17 @@ return {
     -- No need for lazy.nvim to lazy-load it.
     lazy = false,
   },
+  -- Arduino-Nvim
+  {
+    'yuukiflow/Arduino-Nvim',
+    ft = 'arduino',
+    opts = {},
+    dependencies = {
+      'nvim-telescope/telescope.nvim',
+      -- optional: remove if you use Neovim's built-in LSP (>= 0.11)
+      'neovim/nvim-lspconfig',
+    },
+  },
   -- p5.js
   {
     'prjctimg/p5.nvim',
